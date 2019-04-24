@@ -1,0 +1,42 @@
+body{
+    background-color: #333;
+    color: white;
+}
+body>div{
+    background-color: green;
+    width: 400px;
+    height: 400px;
+}
+body>div>div{
+    background-color: #555;
+    margin: 10px;
+    width: 180px;
+    height: 180px;
+    float: left;
+}
+body>div>div>div{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    float: left;
+    background-color: red;
+}
+body>div>div:first-child>div:first-child{
+    background-color: blue;
+}
+body>div>div:last-child>div:last-child{
+    background-color: black;
+}
+body>div>div:first-child>div:last-child{
+    background-color: rgb(217, 255, 0);
+}
+body>div>div:last-child>div:first-child{
+    background-color: aqua;
+}
+body>div>div:nth-child(2)>div:nth-child(2){
+    border-radius: 100px;
+}
+body>div>div:nth-child(2)>div:nth-child(3):hover+div:nth-child(4){
+    background-color: rgb(4, 0, 255);
+    border-radius: 100px;
+}

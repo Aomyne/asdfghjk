@@ -1,0 +1,40 @@
+body{
+    background-image: url(1.png);
+    color: white;   
+    text-align: center; 
+}
+#prel{
+    margin: 200px;
+}
+#prel span.logo{
+    color: #AAA;
+    font-size: 70px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    line-height: 93px;
+    margin-right: 50px; 
+    border: 2px solid #666;
+    border-radius: 80px;
+    box-shadow: 0 0 5px 2px black;
+    text-shadow: 0 0 5px black;
+    /* animation tag link */
+    animation: rot 1s 3;
+}
+#prel span.logo:hover{
+    animation: rot 1s;
+}
+#prel span:not(.logo){
+    display: inline-block;
+    transform: translateY(-10px);
+    color: #AAA;
+}
+/* declaram cadrele animatiei */
+@keyframes rot{
+    form{ 
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
